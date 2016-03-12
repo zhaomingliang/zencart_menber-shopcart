@@ -1,4 +1,10 @@
 <?php
+	/*
+	 * 使用方法 http://网址/cart.php?verify=123
+	 * return json
+	*/
+	if($GET['verify='] == '123'){}  else{ exit(); }
+
 	require_once('includes/configure.php');
 	$mysql_servicer=DB_SERVER;//服务器名
 	$mysql_username=DB_SERVER_USERNAME;//数据库用户名
